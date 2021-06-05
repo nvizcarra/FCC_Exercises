@@ -83,3 +83,146 @@ class Kitten extends React.Component {
 }
 ```
 
+# 8. [Crear un componente React con *Composition*](https://github.com/nvizcarra/FCC_Exercises/blob/ef03cb240d1388345e06c8c5cb137d169d1fdd22/03%20Front_End_Development_Libraries/React/09%20Create%20a%20Component%20with%20Composition.md)
+
+```js
+return (
+ <App>
+  <Navbar />
+  <Dashboard />
+  <Footer />
+ </App>
+)
+```
+
+```js
+const ChildComponent = () => {
+  return (
+    <div>
+      <p>I am the child</p>
+    </div>
+  );
+};
+
+class ParentComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>I am the parent</h1>
+        { /* Change code below this line */ }
+
+        <ChildComponent />
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};
+```
+
+# 9. [Utilizar React para renderizar componentes anidados](https://github.com/nvizcarra/FCC_Exercises/blob/ef03cb240d1388345e06c8c5cb137d169d1fdd22/03%20Front_End_Development_Libraries/React/10%20Use%20React%20to%20Render%20Nested%20Components.md)
+
+```js
+const TypesOfFruit = () => {
+  return (
+    <div>
+      <h2>Fruits:</h2>
+      <ul>
+        <li>Apples</li>
+        <li>Blueberries</li>
+        <li>Strawberries</li>
+        <li>Bananas</li>
+      </ul>
+    </div>
+  );
+};
+
+const Fruits = () => {
+  return (
+    <div>
+      { /* Change code below this line */ }
+        <TypesOfFruit />
+      { /* Change code above this line */ }
+    </div>
+  );
+};
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        { /* Change code below this line */ }
+            <Fruits />
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};
+```
+
+# 10. [Compose de componentes React](https://github.com/nvizcarra/FCC_Exercises/blob/ef03cb240d1388345e06c8c5cb137d169d1fdd22/03%20Front_End_Development_Libraries/React/11%20Compose%20React%20Components.md)
+
+```js
+const TypesOfFruit = () => {
+  return (
+    <div>
+      <h2>Fruits:</h2>
+      <ul>
+        <li>Apples</li>
+        <li>Blueberries</li>
+        <li>Strawberries</li>
+        <li>Bananas</li>
+      </ul>
+    </div>
+  );
+};
+
+const Fruits = () => {
+  return (
+    <div>
+      { /* Change code below this line */ }
+        <TypesOfFruit />
+      { /* Change code above this line */ }
+    </div>
+  );
+};
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        { /* Change code below this line */ }
+            <Fruits />
+        { /* Change code above this line */ }
+      </div>
+    );
+  }
+};
+```
+
+# [11. Renderizar en el DOM un componente de clase](https://github.com/nvizcarra/FCC_Exercises/blob/ef03cb240d1388345e06c8c5cb137d169d1fdd22/03%20Front_End_Development_Libraries/React/12%20Render%20a%20Class%20Component%20to%20the%20DOM.md)
+
+```js
+// El primer arg es el componente React que quiero renderizar
+// El segundo arg es el nodo del DOM en donde quiero renderizar el componente
+ReactDOM.render(componentToRender, targetNode)
+```
+Los componentes de React pasan al React.DOM.render() de una forma diferente de los elementos JSX. Para pasar un elemento JSX, se pasa el nombre del elemento a renderizar. En cambio, para los componentes React, hay que usar la sintaxis similar al renderizado de un componente anidado, por ejemplo:
+
+*Esta sintaxis se utiliza tanto para los componentes de clase ES6 y los functional components.*
+
+```js
+ReactDOM.render(<ComponentToRender />, targetNode)
+```
