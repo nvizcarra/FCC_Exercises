@@ -16,6 +16,6 @@ Beneficios:
 
 5. It's worth noting that under the hood the challenges are calling ReactDOM.render(JSX, document.getElementById('root')). This function call is what places your JSX into React's own lightweight representation of the DOM. React then uses snapshots of its own DOM to optimize updating only specific parts of the actual DOM.
 
-<!-- The following code uses JSX to assign a H1 element to the constant JSX -->
-const JSX = <H1>Hello JSX!</h1>
+```<!-- The following code uses JSX to assign a H1 element to the constant JSX -->
+```const JSX = <H1>Hello JSX!</h1>
 
