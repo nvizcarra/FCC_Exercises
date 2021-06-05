@@ -4,10 +4,12 @@
 
 2. React utiliza una extensión de JavaScript llamada JSX, la cual permite escribir HTML directamente dentro de JavaScript.
 
-Beneficios: 
+## Beneficios: 
+```
 * Permite usar el poder programático completo de JavaScript dentro de HTML
 * Ayuda a mantener el código legible
 * En su mayoría, JSX es similar al HTML común que hemos aprendido
+```
 
 3. De todos modos, existen algunas diferencias clave. Por ejemplo:
 * Dado que JSX es una extension sintática de JavaScript, uno puede escribir código JavaScript dentro de JSX. Para ello se tiene que añadir el código JavaScript entre llaves { 'código JavaScript' }
@@ -18,5 +20,7 @@ Beneficios:
 
 The following code uses JSX to assign a H1 element to the constant JSX:
 
-```const JSX = <H1>Hello JSX!</h1>
+```
+const JSX = <H1>Hello JSX!</h1>
+```
 
