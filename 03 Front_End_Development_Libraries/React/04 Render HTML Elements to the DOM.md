@@ -25,7 +25,5 @@ const JSX = (
 );
 // Change code below this line
 
-// ReactDOM.render(JSX, challenge-node);
-
 ReactDOM.render(JSX, document.getElementById("challenge-node"));
 ```
