@@ -1,4 +1,4 @@
-#02 Create a Complex JSX Element
+# 02 Create a Complex JSX Element
 
 ## IMPORTANT
 
