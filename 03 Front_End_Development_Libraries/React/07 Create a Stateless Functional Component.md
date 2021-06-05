@@ -14,7 +14,7 @@ El nombre de la función si o si tiene que tener inicial mayúscula.
 
 Ejemplo de *stateless functional component* que asigna una clase HTML en JSX:
 
-```
+```javascript
 const DemoComponent = function() {
   return (
     <div className='customClass' />
@@ -22,7 +22,7 @@ const DemoComponent = function() {
 };
 ```
 
-Luego de transpilar, el <div> tendrá una clase CSS llamada customClass.
+Luego de transpilar, el div tendrá una clase CSS llamada customClass.
 
 Dado que un componente JSX representa HTML, podemos juntar varios componentes para crear una web HTML compleja, lo cual es la clave de React.
 
@@ -32,7 +32,7 @@ The code editor has a function called MyComponent. Complete this function so it 
 
 Note: The text is considered a child of the div element, so you will not be able to use a self-closing tag.
 
-```
+```js
 const MyComponent = function() {
   // Change code below this line
   return (
