@@ -12,6 +12,7 @@ En este método, el primer argumento es el elemento React o componente que quere
 El segundo argumento es el nodo del DOM hacia el cual queremos renderizar el componente.
 
 ReactDOM.render() tiene que ser llamado luego de la declaración de elementos JSX, primero declarando las variables antes de utilizarlas.
+```
 
 ```
 const JSX = (
