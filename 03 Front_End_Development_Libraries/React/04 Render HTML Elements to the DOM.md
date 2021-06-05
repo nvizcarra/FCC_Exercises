@@ -4,15 +4,17 @@ Hemos aprendido que JSX es una buena herramienta para escribir código HTML dent
 
 ReactDOM ofrece un simple método para renderizar elementos React en el DOM.
 
-Sintáxis:
+## Sintáxis:
 
-``` ReactDOM.render(componentToRender, targetNode)
+``` 
+ReactDOM.render(componentToRender, targetNode)
+``` 
 
 En este método, el primer argumento es el elemento React o componente que queremos renderizar.
 El segundo argumento es el nodo del DOM hacia el cual queremos renderizar el componente.
-
 ReactDOM.render() tiene que ser llamado luego de la declaración de elementos JSX, primero declarando las variables antes de utilizarlas.
-```
+
+Ejercicio:
 
 ```
 const JSX = (
