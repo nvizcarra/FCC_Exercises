@@ -1,4 +1,4 @@
-#01 Create a JSX Simple Element
+# 01 Create a JSX Simple Element
 
 1. React es una librería de código abierto, creada y mantenida por Facebook. Es una herramienta que renderiza la Interfaz de Usuario en aplicaciones web modernas.
 
