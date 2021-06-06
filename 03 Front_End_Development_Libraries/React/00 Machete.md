@@ -226,3 +226,54 @@ Los componentes de React pasan al React.DOM.render() de una forma diferente de l
 ```js
 ReactDOM.render(<ComponentToRender />, targetNode)
 ```
+
+Ejemplo:
+
+```js
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        {/* Change code below this line */}
+        <Fruits />
+        <Vegetables />
+        {/* Change code above this line */}
+      </div>
+    );
+  }
+};
+
+// Change code below this line
+
+ReactDOM.render(<TypesOfFood />, document.getElementById("challenge-node"));
+```
+
+# [12. Renderizar un class component en el DOM.](https://github.com/nvizcarra/FCC_Exercises/blob/511a414e63183dfd180c11fb53a8d62da0849b67/03%20Front_End_Development_Libraries/React/12%20Render%20a%20Class%20Component%20to%20the%20DOM.md)
+
+```js
+ReactDOM.render(<ComponentToRender />, targetNode)
+```
+
+# [13. Creando un componente React desde 0.](https://github.com/nvizcarra/FCC_Exercises/blob/f984b286e0ae0296239e43a7892f279c79ea1668/03%20Front_End_Development_Libraries/React/13%20Write%20a%20React%20Component%20from%20Scratch.md)
+
+```js
+class MyComponent extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+        <div id='challenge-node'>
+            <h1>My First React Component!</h1>
+        </div>
+        );
+    }
+};
+
+ReactDOM.render(<MyComponent />, document.getElementById("challenge-node"));
+```
