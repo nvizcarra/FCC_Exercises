@@ -27,7 +27,7 @@ const JSX =  <div>
 {/* */}
 ```
 
-# 3. API para renderizar elementos HTML en el DOM
+# [3. API para renderizar elementos HTML en el DOM](https://github.com/nvizcarra/FCC_Exercises/blob/8bb87555f0a6181522a11cceba96073cbcfb3610/03%20Front_End_Development_Libraries/React/04%20Render%20HTML%20Elements%20to%20the%20DOM.md)
 
 ```js
 ReactDOM.render(componentToRender, targetNode)
