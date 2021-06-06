@@ -12,14 +12,18 @@ Posee un método de renderizado que devuelve HTML (desde JSX) o null.
 > Render this component to the DOM using ReactDOM.render(). There is a div with id='challenge-node' available for you to use.
 
 ```js
-class MyComponent extends React.Component() {
+class MyComponent extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-    constructor();
-    props();
-    
-    return (
-        <div>
+    render() {
+        return (
+        <div id='challenge-node'>
             <h1>My First React Component!</h1>
         </div>
-    );
+        );
+    }
 };
+
+ReactDOM.render(<MyComponent />, document.getElementById("challenge-node"));
