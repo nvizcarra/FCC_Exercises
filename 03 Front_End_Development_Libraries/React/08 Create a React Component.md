@@ -4,6 +4,8 @@ Otro modo de crear un comopente React, es con la *class syntax* de **ES6**.
 
 Analizar el siguiente código:
 
+> *It is best practice to call any component’s constructor with super and to pass props to both. super pulls the constructor of our component’s parent class (in this case React.Component).*
+
 ```js
 class Kitten extends React.Component {
   constructor(props) {
